@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="GreenhouseApp.MainPage">
+
+    <!-- Боковое меню -->
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Меню" >
+            <StackLayout Padding="10">
+                <Label Text="Меню" FontSize="24" FontAttributes="Bold" />
+
+                <Image Source="Resources/Images/logofon1.png"
+                       WidthRequest="350"
+                       HeightRequest="200"
+                       HorizontalOptions="Center"
+                       Margin="5"
+                       Aspect="AspectFill" />
+
+                <Button Text="🏠 Главная"
+                        Clicked="OnHomeClicked"
+                        BackgroundColor="#2196F3"
+                        TextColor="White"
+                        CornerRadius="15" 
+                        Margin="10" BorderColor="Black" BorderWidth="1.5"/>
+
+                <Button Text="🛠️ Управление теплицей" 
+                        Clicked="OnControlClicked" 
+                        BackgroundColor="#2196F3" 
+                        TextColor="White" 
+                        CornerRadius="15" 
+                        Margin="10" BorderColor="Black" BorderWidth="1.5"/>
+
+                <Button Text="🖲️ Датчики" 
+                        Clicked="OnSensorsClicked" 
+                        BackgroundColor="#2196F3" 
+                        TextColor="White" 
+                        CornerRadius="15" 
+                        Margin="10" BorderColor="Black" BorderWidth="1.5"/>
+
+                <Button Text="📈 Последние показатели" 
+                        Clicked="OnStatsClicked" 
+                        BackgroundColor="#2196F3" 
+                        TextColor="White" 
+                        CornerRadius="15" 
+                        Margin="10" BorderColor="Black" BorderWidth="1.5"/>
+
+                <Button Text="⚙️ Настройки контроллера" 
+                        Clicked="OnControllerSettingsClicked" 
+                        BackgroundColor="#2196F3" 
+                        TextColor="White" 
+                        CornerRadius="15" 
+                        Margin="10" BorderColor="Black" BorderWidth="1.5"/>
+
+                <Button Text="ℹ️ О приложении" 
+                        Clicked="OnAboutPage" 
+                        BackgroundColor="#2196F3" 
+                        TextColor="White" 
+                        CornerRadius="15" 
+                        Margin="10"  BorderColor="Black" BorderWidth="1.5"/>
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <!-- Основной контент -->
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage BackgroundColor="black">
+                    <AbsoluteLayout x:Name="MainAbsoluteLayout">
+                        <StackLayout Padding="20" 
+                                     AbsoluteLayout.LayoutBounds="0.5,0.5,AutoSize,AutoSize"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional">
+                            
+                        </StackLayout>
+                    </AbsoluteLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

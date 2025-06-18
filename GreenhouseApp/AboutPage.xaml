@@ -1,0 +1,69 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GreenhouseApp.AboutPage"
+             Title="О приложении">
+
+    <StackLayout Padding="20" Spacing="20" BackgroundColor="#c1dbaf">
+
+        <!-- Логотип приложения -->
+        <Frame CornerRadius="0" BackgroundColor="Black"  WidthRequest="253" HeightRequest="253">
+            <Image Source="Resources/Images/logofon1.png"
+               WidthRequest="400"
+               HeightRequest="250"
+               HorizontalOptions="Center"
+               Aspect="AspectFit"
+               />
+        </Frame>
+
+        <!-- Название приложения -->
+        <Label Text="Система Управления Теплицей"
+               FontSize="32"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="Black" />
+
+        <!-- Краткое описание -->
+        <Label Text="Приложение для управления условиями внутри теплицы: контроль температуры, влажности и других показателей."
+               FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="#262435"
+               HorizontalTextAlignment="Center" />
+
+        <!-- Версия приложения -->
+        <Label Text="Версия: 2.0.0"
+               FontSize="14"
+               HorizontalOptions="Center"
+               TextColor="#262435" />
+
+        <!-- Разработчики -->
+        <StackLayout>
+            <Label Text="Разработчики:"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="BriusCompany.IT"
+                   FontSize="16"
+                   TextColor="#262435" />
+             
+
+        </StackLayout>
+
+        <!-- Контакты -->
+        <StackLayout>
+            <Label Text="Контакты:"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="Email: briuscompany@gmail.com"
+                   FontSize="16"
+                   TextColor="#262435" />
+            <Label Text="Телефон: +7 (938) 174-47-23"
+                   FontSize="16"
+                   TextColor="#262435" />
+        </StackLayout>
+
+       
+
+    </StackLayout>
+</ContentPage>

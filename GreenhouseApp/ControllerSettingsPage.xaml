@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GreenhouseApp.ControllerSettingsPage"
+             Title="Настройки контроллера"
+             BackgroundColor="#c1dbaf">
+    <StackLayout Orientation="Vertical" Spacing="10" Padding="20">
+        <Frame CornerRadius="10"
+               BackgroundColor="Black"
+               Padding="1"
+               Margin="0,10">
+            <Frame CornerRadius="10"
+                   BackgroundColor="#302f31"
+                   Padding="10">
+                <Picker x:Name="GreenhousePicker"
+                        Title="Выберите теплицу"
+                        FontSize="18"
+                        TextColor="White"
+                        TitleColor="White"
+                        BackgroundColor="Transparent" />
+            </Frame>
+        </Frame>
+
+        <Frame CornerRadius="10"
+               BackgroundColor="Black"
+               Padding="1"
+               Margin="0,10">
+            <Frame CornerRadius="10"
+                   BackgroundColor="#302f31"
+                   Padding="10">
+                <StackLayout Spacing="5">
+                    <Label Text="Температура воздуха"
+                           FontSize="18"
+                           TextColor="White" />
+                    <Slider x:Name="TemperatureSlider"
+                            Minimum="15"
+                            Maximum="40"
+                            Value="25"
+                            MinimumTrackColor="#23B5DE"
+                            MaximumTrackColor="#808080"
+                            ThumbColor="White" />
+                    <Label x:Name="TemperatureLabel"
+                           Text="25.0 °C"
+                           FontSize="24"
+                           TextColor="White"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </Frame>
+        </Frame>
+
+        <Frame CornerRadius="10"
+               BackgroundColor="Black"
+               Padding="1"
+               Margin="0,10">
+            <Frame CornerRadius="10"
+                   BackgroundColor="#302f31"
+                   Padding="10">
+                <StackLayout Spacing="5">
+                    <Label Text="Влажность почвы"
+                           FontSize="18"
+                           TextColor="White" />
+                    <Slider x:Name="SoilMoistureSlider"
+                            Minimum="0"
+                            Maximum="100"
+                            Value="40"
+                            MinimumTrackColor="#23B5DE"
+                            MaximumTrackColor="#808080"
+                            ThumbColor="White" />
+                    <Label x:Name="SoilMoistureLabel"
+                           Text="40.0 %"
+                           FontSize="24"
+                           TextColor="White"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </Frame>
+        </Frame>
+
+        <Frame CornerRadius="10"
+               BackgroundColor="Black"
+               Padding="1"
+               Margin="0,10">
+            <Frame CornerRadius="10"
+                   BackgroundColor="#302f31"
+                   Padding="10">
+                <StackLayout Spacing="5">
+                    <Label Text="Часы освещения"
+                           FontSize="18"
+                           TextColor="White" />
+                    <Slider x:Name="DaylightSlider"
+                            Minimum="0"
+                            Maximum="24"
+                            Value="12"
+                            MinimumTrackColor="#23B5DE"
+                            MaximumTrackColor="#808080"
+                            ThumbColor="White" />
+                    <Label x:Name="DaylightLabel"
+                           Text="12 часов"
+                           FontSize="24"
+                           TextColor="White"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </Frame>
+        </Frame>
+
+       
+                <Button Text="Сохранить"
+                        BackgroundColor="#23B5DE"
+                        BorderColor="Black"
+                        BorderWidth="2"
+                        TextColor="White"
+                        FontSize="18"
+                        Clicked="OnSaveButtonClicked" />
+          
+    </StackLayout>
+</ContentPage>
