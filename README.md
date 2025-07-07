@@ -2,4 +2,5 @@
 
 Студент группы ВИ42
 Костюченко Дмитрий Игоревич
-![Uploading image.png…]()
+
+![image](https://github.com/user-attachments/assets/64b6bb85-5ded-46ce-a40a-cf1a601a6d9b)
